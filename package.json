@@ -1,0 +1,20 @@
+{
+  "name": "js-heap",
+  "version": "1.0.0",
+  "description": "A javascript heap implementation",
+  "main": "heap.js",
+  "scripts": {
+    "test": "node test/test.js | node_modules/.bin/tap-spec"
+  },
+  "keywords": [
+    "heap",
+    "priority",
+    "queue"
+  ],
+  "author": "Tom Hauburger <thauburger@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tap-spec": "^1.0.0",
+    "tape": "^3.0.0"
+  }
+}
