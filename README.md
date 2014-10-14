@@ -21,9 +21,11 @@ var h = new Heap(function(a,b) {
 });
 ```
 
-The comparison function behaves like a `sort` function you would pass into a standard [Javascript Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
+The comparison function behaves like a [sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) function you would pass into a standard [Javascript Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
-The default comparison function is the one shown above - which organizes a heap such that the highest numeric priority is at the top.
+The default comparison function is the one shown above - the heap is organized so that the highest numeric priority is at the top.
+
+## Heap Values
 
 A node in the heap can be whatever you'd like:
 
@@ -46,9 +48,9 @@ var h = new Heap(function(a, b) {
 ```
 
 ##.push(node)
-Pushes a new node onto the heap. A "node" value can be a primitive or an arbitrary Javascript option. Pushed nodes are sorted based on the provided sort function.
+Pushes a new node onto the heap. A "node" value can be a primitive or an arbitrary Javascript object. Pushed nodes are sorted based on the provided sort function.
 
-```
+```javascript
 h.push(1);
 h.push(2);
 ...
@@ -57,7 +59,7 @@ h.push(2);
 ##.pop()
 Removes and returns the top node in the heap. If the heap is empty, `null` is returned.
 
-```
+```javascript
 // Returns 2
 h.pop();
 
@@ -70,9 +72,9 @@ h.pop();
 ```
 
 ##.peek()
-Returns the top node in the heap. The node is not removed.
+Returns the top node in the heap. The node remains on top of the heap.
 
-```
+```javascript
 h.push(1);
 
 // Returns 1
