@@ -1,8 +1,9 @@
 {
   "name": "js-heap",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A javascript heap implementation",
   "main": "heap.js",
+  "homepage": "https://github.com/thauburger/js-heap",
   "scripts": {
     "test": "node test/test.js | node_modules/.bin/tap-spec"
   },
@@ -16,5 +17,9 @@
   "devDependencies": {
     "tap-spec": "^1.0.0",
     "tape": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thauburger/js-heap"
   }
 }
