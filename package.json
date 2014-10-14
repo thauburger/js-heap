@@ -1,6 +1,6 @@
 {
   "name": "js-heap",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A javascript heap implementation",
   "main": "heap.js",
   "homepage": "https://github.com/thauburger/js-heap",
