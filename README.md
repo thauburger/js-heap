@@ -1,7 +1,7 @@
 js-heap
 =======
 
-js-heap is a flexible, value-agnostic heap for Javascript. It provides a simple interface, and allows users to define custom comparison functions for heap sorting.
+js-heap is a flexible, value-agnostic heap for Javascript. It provides a simple interface and allows users to define custom comparison functions for heap sorting.
 
 ## Installation
 
