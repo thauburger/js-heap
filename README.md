@@ -1,11 +1,11 @@
 js-heap
 =======
 
-js-heap is a flexible, value-agnostic heap implementation for Javascript. It provides a simple heap interface, and allows users to define custom comparison functions for heap sorting.
+js-heap is a flexible, value-agnostic heap for Javascript. It provides a simple interface, and allows users to define custom comparison functions for heap sorting.
 
 ## Installation
 
-```
+```javscript
 npm install js-heap
 ```
 
@@ -13,7 +13,7 @@ npm install js-heap
 
 To get started, `require` **js-heap**, and create a new Heap instance:
 
-```
+```javascript
 var Heap = require('js-heap');
 
 var h = new Heap(function(a,b) {
@@ -27,7 +27,7 @@ The default comparison function is the one shown above - which organizes a heap 
 
 A node in the heap can be whatever you'd like:
 
-```
+```javascript
 // Example node
 var node = {
   priority: 1,
@@ -39,18 +39,52 @@ h.push(node);
 
 You can create a custom sort function to compare arbitrary nodes:
 
-```
+```javascript
 var h = new Heap(function(a, b) {
   return a.priority - b.priority;
 });
 ```
 
 ##.push(node)
-
-Pushes a new node onto the heap. A "node" value can be a primitive value or an arbitrary Javascript option. Pushed nodes are sorted based on the provided sort function.
+Pushes a new node onto the heap. A "node" value can be a primitive or an arbitrary Javascript option. Pushed nodes are sorted based on the provided sort function.
 
 ```
 h.push(1);
 h.push(2);
 ...
 ```
+
+##.pop()
+Removes and returns the top node in the heap. If the heap is empty, `null` is returned.
+
+```
+// Returns 2
+h.pop();
+
+// Returns 1
+h.pop();
+
+// Returns null
+h.pop();
+...
+```
+
+##.peek()
+Returns the top node in the heap. The node is not removed.
+
+```
+h.push(1);
+
+// Returns 1
+h.peek();
+
+// Still returns 1
+h.peek();
+...
+```
+
+##.isEmpty()
+Returns `true` if the heap is empty. 
+
+##.length
+A read-only length property representing the number of nodes in the heap.
