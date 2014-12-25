@@ -116,9 +116,9 @@ Heap.prototype._right = function(i) {
 
 Heap.prototype._swap = function(i, j) {
   var a = this._array;
-  var v = this._array[i];
-  this._array[i] = this._array[j];
-  this._array[j] = v;
+  var v = a[i];
+  a[i] = a[j];
+  a[j] = v;
 };
 
 if (typeof module !== 'undefined') {
