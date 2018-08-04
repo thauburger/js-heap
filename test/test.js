@@ -31,8 +31,8 @@ test('Length property', function(t) {
  * Heap functionality
  */
 
-var values = [1, 2, 3, 5, 10];
-var target = [10, 5, 2, 1, 3];
+var values = [0, 2, 3, 5, 10];
+var target = [10, 5, 2, 0, 3];
 
 test('Push One', function(t) {
   var v = values[0];

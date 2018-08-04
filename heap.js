@@ -20,7 +20,6 @@ var Heap = function(sort) {
 };
 
 Heap.prototype.push = function(node) {
-  node = node || {};
   this._array.push(node);
   this._bubble();
 };
